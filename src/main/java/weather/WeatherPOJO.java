@@ -30,7 +30,7 @@ public class WeatherPOJO {
         // Compare the data members and return accordingly
         Double diff=Math.abs(temp1 -temp2);
 
-        if (diff > Double.parseDouble(Variance.temp_range))
+        if (diff > Variance.temp_range)
         {
             return false;
         }
@@ -42,7 +42,7 @@ public class WeatherPOJO {
         // Compare the data members and return accordingly
         Double diff=Math.abs(hum1 -hum2);
 
-        if (diff > Double.parseDouble(Variance.humidity_range))
+        if (diff >Variance.humidity_range)
         {
             return false;
         }
