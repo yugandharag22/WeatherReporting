@@ -1,0 +1,21 @@
+
+[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Šàó«
+Y
+java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†È
+I
+java:S1128"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠŞ›
+p
+java:S1450"URemove the "driver" field and declare it as a local variable in the relevant methods.(š…ŒÅøÿÿÿÿ
+h	java:S116"SRename this field "BASE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ûüâ
+7
+java:S1170"!Make this final field static too.(§Ûüâ
+P
+java:S1854"<Remove this useless assignment to local variable "humidity".(•ªš¹
+Q
+java:S1854"8Remove this useless assignment to local variable "temp".(§Áœıÿÿÿÿ
+B
+java:S1481")Remove this unused "temp" local variable.(§Áœıÿÿÿÿ
+A
+java:S1481"-Remove this unused "humidity" local variable.(•ªš¹
+G
+java:S1068",Remove this unused "locators" private field.(Æ†ªÔùÿÿÿÿ

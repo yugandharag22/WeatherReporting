@@ -10,12 +10,11 @@ public class CompareWeatherTest {
     @Test
     public void CompareTempHumidityTest() throws Exception {
         String city= System.getProperty("city");
-        System.out.println("City is:"+city);
+        Variance.temp_range=Double.parseDouble(System.getProperty("temp_variance"));
+        Variance.humidity_range=Double.parseDouble(System.getProperty("humidity_variance"));
+
         WeatherUI ui=new WeatherUI();
         WeatherAPI api= new WeatherAPI();
-
-        Variance.temp_range=2.0;
-        Variance.humidity_range=10.0;
 
         WeatherPOJO ui_weather=ui.fetchWeatherData(city);
         WeatherPOJO api_weather=api.fetchWeatherData(city);

@@ -10,6 +10,8 @@
 
     <properties>
         <city>Mumbai</city>
+        <temp_variance>2.0</temp_variance>
+        <humidity_variance>10.0</humidity_variance>
     </properties>
 
     <build>
@@ -30,6 +32,8 @@
                 <configuration>
                     <systemProperties>
                         <city>${city}</city>
+                        <temp_variance>${temp_variance}</temp_variance>
+                        <humidity_variance>${humidity_variance}</humidity_variance>
                     </systemProperties>
                 </configuration>
                 <dependencies>
