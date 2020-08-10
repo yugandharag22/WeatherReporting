@@ -7,6 +7,11 @@
     <groupId>org.example</groupId>
     <artifactId>WeatherReporting</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <city>Mumbai</city>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -17,12 +22,28 @@
                     <target>7</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M4</version>
+
+                <configuration>
+                    <systemProperties>
+                        <city>${city}</city>
+                    </systemProperties>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>1.9.4</version>
+                    </dependency>
+
+                </dependencies>
+            </plugin>
         </plugins>
     </build>
 
-    <properties>
-        <city>Nagpur</city>
-    </properties>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->

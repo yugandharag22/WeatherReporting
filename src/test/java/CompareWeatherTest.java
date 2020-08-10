@@ -9,8 +9,7 @@ public class CompareWeatherTest {
 
     @Test
     public void CompareTempHumidityTest() throws Exception {
-        //String city= System.getProperty("city");
-        String city="Bengaluru";
+        String city= System.getProperty("city");
         System.out.println("City is:"+city);
         WeatherUI ui=new WeatherUI();
         WeatherAPI api= new WeatherAPI();
