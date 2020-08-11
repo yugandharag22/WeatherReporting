@@ -1,5 +1,10 @@
+## Pre-requisites :
+* Java 8+
+* Maven
+* Any web browser - Chrome, Firefox, IE.
+
 ## Description :
-This is a demo project to compare weather data captured from NDTV website and OpenWeather API.
+This is a demo maven project to compare weather data captured from NDTV website and OpenWeather API.
 
 ## Run testcase :
 `mvn clean test -Dcity="Bengaluru" -Dtemp_variance="2.0" -Dhumidity_variance="10.0"`
